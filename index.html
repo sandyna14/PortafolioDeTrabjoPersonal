@@ -1,44 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de trabajo</title>
+    <title>Portafolio de Trabajos</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
 
+<body>
     <header>
         <div class="container">
             <nav class="menu">
-                <a href="#">Acerca de</a>
-                <a href="#">Trabajo</a>
-                <a href="#">Contacto</a>
+                <a href="#about">Acerca de</a>
+                <a href="#jobs">Trabajos</a>
+                <a href="#contact">Contacto</a>
             </nav>
-        </div>
-        <div class="container-text">
-            <div class="text">
-                <h1 class="name">Sandy Camila Salas Yanes</h1>
-                <h2 class="Profesion">Desarrollador full stack</h2>
+            <div class="container-text">
+                <div class="text">
+                    <h1 class="name">Sandy Camila Salas Yanes</h1>
+                    <h2 class="Profesion">Desarrollador full stack</h2>
+                </div>
             </div>
         </div>
+
     </header>
-    <section class="maim">
-        <section class="about">
-           <div class="container">
-            <div class="photo">
-                <img src="assets/img/perfil.png" width="115px" height="115px" alt="Sandy camila">
+    <section class="main">
+        <section class="about" id="about">
+            <div class="container">
+                <div class="photo">
+                    <img src="assets/img/perfil.png" width="150px" height="150px" alt="Sandy camila">
+                </div>
+                <div class="text">
+                    <h3 class="title">Acerca de</h3>
+                    <p> <span class="bold">Ingeniera Biomedica</span>, Desarrolladora Full Stack íntegro y responsable
+                        egresado del training de desarrollo de enyoi, con conocimientos técnicos
+                        en Backend y Frontend, en lógica y programación, lenguaje <span class="bold">JavaScript,
+                            programación orientada a objetos</span>, aplica las buenas prácticas y marcos ágiles,
+                        en el entornos de desarrollo Visual Studio Code. </p>
+                </div>
             </div>
-            <div class="text">
-                <h3 class="title">Acerca de</h3>
-                <p> <span class="bold">Ingeniera Biomedica</span>, Desarrolladora Full Stack íntegro y responsable
-                    egresado del training de desarrollo de enyoi, con conocimientos técnicos 
-                    en Backend y Frontend, en lógica y programación, lenguaje <span class="bold">JavaScript</span>, 
-                    programación orientada a objetos, aplica las buenas prácticas y marcos ágiles, 
-                    en el entornos de desarrollo Visual Studio Code. </p>
+        </section>
+        <section class="jobs" id="jobs">
+            <div class="container">
+                <h3 class="title">Trabajos</h3>
+                <div class="container-job">
+                    <div class="job">
+                        <div class="imagenjob">
+                            <img src="assets/img/proyectoUber.png" alt="Pagina uber">
+                        </div>
+                        <div class="descripcion">
+                            <p class="name">Pagina Uber</p>
+                            <p class="categoria">HTML-CSS</p>
+                        </div>
+                    </div>
+                    <div class="job">
+                        <div class="imagenjob">
+                            <img src="assets/img/proyectoDiscord.png" alt="Pagina Discord">
+                        </div>
+                        <div class="descripcion">
+                            <p class="name">Pagina Discord</p>
+                            <p class="categoria">HTML-CSS</p>
+                        </div>
+                    </div>
+                    <dic class="job">
+                        <div class="imagenjob">
+                            <img src="assets/img/proyectoIntegradorEnyoi.png" alt="Pagina Integrador">
+                        </div>
+                        <div class="descripcion">
+                            <p class="name">Portafolio enyoi</p>
+                            <p class="categoria">HTML-CSS-js</p>
+                        </div>
+                    </dic>
+                    <div class="job">
+                        <div class="imagenjob">
+                            <img src="assets/img/proyectoDribble.png" alt="Pagina Dribbble">
+                        </div>
+                        <div class="descripcion">
+                            <p class="name">Pagina Dribbble</p>
+                            <p class="categoria">HTML-CSS</p>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
-           </div>
-       
-    
+            </div>
+        </section>
+    </section>
+    <footer>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h3 class="title">Contacto</h3>
+                <form class="formulario">
+                    <input type="text" placeholder="Nombre" name="nombre" required>
+                    <input type="email" placeholder="Correo" name="correo" required>
+                    <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                    <input class="boton" type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="redes-sociales">
+                <div class="container">
+                 <a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                    <path d="M 25 3 C 12.861562 3 3 12.861562 3 25 C 3 36.019135 11.127533 45.138355 21.712891 46.728516 L 22.861328 46.902344 L 22.861328 29.566406 L 17.664062 29.566406 L 17.664062 26.046875 L 22.861328 26.046875 L 22.861328 21.373047 C 22.861328 18.494965 23.551973 16.599417 24.695312 15.410156 C 25.838652 14.220896 27.528004 13.621094 29.878906 13.621094 C 31.758714 13.621094 32.490022 13.734993 33.185547 13.820312 L 33.185547 16.701172 L 30.738281 16.701172 C 29.349697 16.701172 28.210449 17.475903 27.619141 18.507812 C 27.027832 19.539724 26.84375 20.771816 26.84375 22.027344 L 26.84375 26.044922 L 32.966797 26.044922 L 32.421875 29.564453 L 26.84375 29.564453 L 26.84375 46.929688 L 27.978516 46.775391 C 38.71434 45.319366 47 36.126845 47 25 C 47 12.861562 37.138438 3 25 3 z M 25 5 C 36.057562 5 45 13.942438 45 25 C 45 34.729791 38.035799 42.731796 28.84375 44.533203 L 28.84375 31.564453 L 34.136719 31.564453 L 35.298828 24.044922 L 28.84375 24.044922 L 28.84375 22.027344 C 28.84375 20.989871 29.033574 20.060293 29.353516 19.501953 C 29.673457 18.943614 29.981865 18.701172 30.738281 18.701172 L 35.185547 18.701172 L 35.185547 12.009766 L 34.318359 11.892578 C 33.718567 11.811418 32.349197 11.621094 29.878906 11.621094 C 27.175808 11.621094 24.855567 12.357448 23.253906 14.023438 C 21.652246 15.689426 20.861328 18.170128 20.861328 21.373047 L 20.861328 24.046875 L 15.664062 24.046875 L 15.664062 31.566406 L 20.861328 31.566406 L 20.861328 44.470703 C 11.816995 42.554813 5 34.624447 5 25 C 5 13.942438 13.942438 5 25 5 z"></path>
+                    </svg></a>
+                    <a href="" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 40 40">
+                        <path fill="#8585cc" d="M30.5,38.5c4.418,0,8-3.582,8-8v-21c0-4.418-3.582-8-8-8h-21c-4.418,0-8,3.582-8,8v21 c0,4.418,3.582,8,8,8H30.5z"></path><path fill="#8d8dd8" d="M3.4,4.331C2.217,5.726,1.5,7.528,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-21 c0-0.503-0.052-0.992-0.141-1.469C32.135,4.22,24.832,2,17,2C12.229,2,7.657,2.832,3.4,4.331z"></path><path fill="#bd82f4" d="M1.505,9.404C1.504,9.437,1.5,9.468,1.5,9.5v21c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V12.897 C32.439,8.56,25.021,6,17,6C11.465,6,6.22,7.226,1.505,9.404z"></path><path fill="#ed73f4" d="M1.5,13.88V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8V17.981C32.724,13.013,25.217,10,17,10 C11.394,10,6.124,11.414,1.5,13.88z"></path><path fill="#f97dcd" d="M17,14c-5.705,0-11.014,1.664-15.5,4.509V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-6.935 C33.194,17.698,25.534,14,17,14z"></path><path fill="#fc9c95" d="M17,18c-5.861,0-11.237,2.033-15.5,5.411V30.5c0,4.418,3.582,8,8,8h21c4.418,0,8-3.582,8-8v-0.238 C34.143,22.925,26.152,18,17,18z"></path><path fill="#ffac99" d="M17,22c-6.145,0-11.66,2.651-15.5,6.859V30.5c0,4.418,3.582,8,8,8h21c2.465,0,4.668-1.117,6.136-2.87 C33.648,27.674,25.999,22,17,22z"></path><path fill="#ffc49c" d="M30.5,38.5c0.957,0,1.87-0.177,2.721-0.485C31.087,31.065,24.649,26,17,26 c-6.186,0-11.592,3.309-14.566,8.248C3.778,36.777,6.437,38.5,9.5,38.5H30.5z"></path><path fill="#ffde8d" d="M17,30c-5.137,0-9.573,2.984-11.684,7.309C6.535,38.06,7.964,38.5,9.5,38.5h19.683 C27.35,33.542,22.595,30,17,30z"></path><path fill="#fff69f" d="M17,34c-3.319,0-6.193,1.813-7.753,4.487C9.332,38.49,9.415,38.5,9.5,38.5h15.26 C23.203,35.818,20.324,34,17,34z"></path><path fill="#8b75a1" d="M31,2c3.86,0,7,3.14,7,7v22c0,3.86-3.14,7-7,7H9c-3.86,0-7-3.14-7-7V9c0-3.86,3.14-7,7-7H31 M31,1H9 C4.582,1,1,4.582,1,9v22c0,4.418,3.582,8,8,8h22c4.418,0,8-3.582,8-8V9C39,4.582,35.418,1,31,1L31,1z"></path><path fill="#fff" d="M27.5 11A1.5 1.5 0 1 0 27.5 14A1.5 1.5 0 1 0 27.5 11Z"></path><path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M20 14A6 6 0 1 0 20 26A6 6 0 1 0 20 14Z"></path><path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M33,14.5c0-4.142-3.358-7.5-7.5-7.5 c-2.176,0-8.824,0-11,0C10.358,7,7,10.358,7,14.5c0,2.176,0,8.824,0,11c0,4.142,3.358,7.5,7.5,7.5c2.176,0,8.824,0,11,0 c4.142,0,7.5-3.358,7.5-7.5C33,23.324,33,16.676,33,14.5z"></path>
+                        </svg></a>
+                    <a href="" class="tiktok"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                        <path d="M41,4H9C6.243,4,4,6.243,4,9v32c0,2.757,2.243,5,5,5h32c2.757,0,5-2.243,5-5V9C46,6.243,43.757,4,41,4z M37.006,22.323 c-0.227,0.021-0.457,0.035-0.69,0.035c-2.623,0-4.928-1.349-6.269-3.388c0,5.349,0,11.435,0,11.537c0,4.709-3.818,8.527-8.527,8.527 s-8.527-3.818-8.527-8.527s3.818-8.527,8.527-8.527c0.178,0,0.352,0.016,0.527,0.027v4.202c-0.175-0.021-0.347-0.053-0.527-0.053 c-2.404,0-4.352,1.948-4.352,4.352s1.948,4.352,4.352,4.352s4.527-1.894,4.527-4.298c0-0.095,0.042-19.594,0.042-19.594h4.016 c0.378,3.591,3.277,6.425,6.901,6.685V22.323z"></path>
+                    </svg></a>
+                </div>
+            </div>
+    </footer>
+    <section>
+        <script src="js/app.js"></script>
+
 </body>
+
 </html>
